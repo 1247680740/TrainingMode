@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" class="TimeFinishSkin">
+	<e:Button id="btn_result" label="" horizontalCenter="0" top="880">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_result_png" source.down="btn_result_png" source.disabled="禁用状btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<ns1:CommonFinish id="l_finish" left="137" top="258"/>
+	<ns1:CommonFinish id="c_finish" horizontalCenter="0" top="258"/>
+	<ns1:CommonFinish id="r_finish" top="258" right="137"/>
+</e:Skin>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HomeCitySkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	<e:Button id="btn_back" label="" enabled="true" left="15" top="23">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="backBtn_png" source.down="backBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image source="logo_png" top="18" right="15"/>
+	<e:Image source="hotTitleImg_png" top="579" left="86"/>
+	<e:Image id="img_bottom" right="0" bottom="0" source="rightBgImg_png"/>
+	<e:Button id="btn_startXL" label="" left="0" top="704" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="startXLImg_png" source.down="startXLImg_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_startSetUp" label="" top="828" left="0" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="setupImg_png" source.down="setupImg_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_StartShow" label="" left="223" top="828" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="teachImg_png" source.down="teachImg_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="label_fitness" bottom="18" right="604">
+		<e:Label text="综合体能" size="30" fontFamily="Microsoft YaHei" italic="true" horizontalCenter="0" verticalCenter="0" x="-416" y="-537" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="label_stay" bottom="18" right="420">
+		<e:Label text="上肢耐力" size="30" fontFamily="Microsoft YaHei" italic="true" horizontalCenter="0" verticalCenter="0" x="-600" y="-537" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="label_heart" right="236" bottom="18">
+		<e:Label text="心肺耐力" size="30" fontFamily="Microsoft YaHei" italic="true" horizontalCenter="0" verticalCenter="0" x="-784" y="-537" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="label_power" right="67" bottom="18">
+		<e:Label text="爆发力" size="30" fontFamily="Microsoft YaHei" italic="true" horizontalCenter="0" verticalCenter="0" x="-938" y="-537" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

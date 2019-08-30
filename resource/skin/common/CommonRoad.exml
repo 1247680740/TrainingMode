@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CommonRoadSkin" width="453" height="777" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="16cbc92a08f" ></w:Config>
+	<e:Image id="img_touch" source="commonRoad_png" height="777" anchorOffsetX="0.5" anchorOffsetY="0.5" width="453" bottom="0"/>
+</e:Skin>

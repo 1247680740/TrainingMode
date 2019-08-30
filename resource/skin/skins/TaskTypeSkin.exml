@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" class="TaskTypeSkin">
+	<ns1:CommonFinish id="l_finish" left="137" top="258" visible="false"/>
+	<ns1:CommonCutDown id="l_prepara" top="258" left="169" visible="false"/>
+	<ns1:CommonGameForm id="l_progress" horizontalCenter="-623" top="0" bottom="0" visible="false"/>
+	<ns1:CommonFinish id="c_finish" horizontalCenter="0" top="258" visible="false"/>
+	<ns1:CommonCutDown id="c_prepara" horizontalCenter="0" top="258" visible="false"/>
+	<ns1:CommonGameForm id="c_progress" top="0" bottom="0" horizontalCenter="0" visible="false"/>
+	<ns1:CommonFinish id="r_finish" right="137" top="258" visible="false"/>
+	<ns1:CommonCutDown id="r_prepara" right="169" top="258" visible="false"/>
+	<ns1:CommonGameForm id="r_progress" horizontalCenter="623" top="0" bottom="0" visible="false"/>
+	<e:Button id="btn_back" label="" left="15" top="23">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pauseBtn_png" source.down="pauseBtn_png" source.disabled="pauseBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_result" label="" enabled="true" horizontalCenter="0" top="880">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_result_png" source.down="btn_result_png" source.disabled="btn_result_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" class="ResultSkin">
+	<e:Image id="img_bg" top="0" bottom="0" source="bg1_png" scale9Grid="1872,17,45,44" width="2500"/>
+
+	<e:Group width="750" top="142" horizontalCenter="-472" height="762">
+		<e:Group top="0" left="0" right="0">
+			<e:Image left="0" right="0" bottom="0" top="0" source="list_titleBg_png"/>
+			<e:Label text="名字" verticalCenter="0" fontFamily="Microsoft YaHei" textColor="0x333333" textAlign="center" italic="true" horizontalCenter="-235"/>
+			<e:Label text="完成次数" verticalCenter="0" fontFamily="Microsoft YaHei" textColor="0x333333" italic="true" textAlign="center" horizontalCenter="30"/>
+			<e:Label text="训练时间" verticalCenter="0" fontFamily="Microsoft YaHei" textAlign="center" italic="true" textColor="0x333333" horizontalCenter="213"/>
+		</e:Group>
+		<e:List id="list_left" left="0" right="0" bottom="0" top="101">
+			<e:layout>
+				<e:VerticalLayout gap="41"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Group width="750" height="762" x="1052" y="140">
+		<e:Group left="0" right="0" top="0">
+			<e:Image left="0" bottom="0" top="0" right="0" source="list_titleBg_png"/>
+			<e:Label text="名字" verticalCenter="0" textColor="0x333333" fontFamily="Microsoft YaHei" italic="true" textAlign="center" horizontalCenter="-235"/>
+			<e:Label text="完成次数" verticalCenter="0" textAlign="center" italic="true" textColor="0x333333" fontFamily="Microsoft YaHei" horizontalCenter="31"/>
+			<e:Label text="训练时间" verticalCenter="0" textColor="0x333333" fontFamily="Microsoft YaHei" horizontalCenter="214"/>
+		</e:Group>
+		<e:List id="list_right" left="0" right="0" bottom="0" top="101">
+			<e:layout>
+				<e:VerticalLayout gap="41"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Label id="label_title" text="本次成绩" horizontalCenter="0" top="19" textColor="0x333333" size="48" fontFamily="Microsoft YaHei" bold="true" italic="true"/>
+	<e:Button id="btn_back" label="" left="15" top="23">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="backBtn_png" source.down="backBtn_png" source.disabled="backBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_newChange" label="" horizontalCenter="0" top="943">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_newChange_png" source.down="btn_newChange_png" source.disabled="btn_newChange_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_pre" label="" left="113" top="943">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="list_pre_png" source.down="list_pre_png" source.disabled="list_pre_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btn_next" label="" right="113" top="943">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="list_next_png" source.down="list_next_png" source.disabled="list_next_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

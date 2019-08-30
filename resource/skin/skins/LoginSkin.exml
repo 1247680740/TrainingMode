@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:common="common.*" class="LoginSkin">
+
+	<e:Button id="btn_back" label="" top="16" left="23" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="backBtn_png" source.down="backBtn_png" source.disabled="backBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="grou_left" left="193" top="234">
+		<e:Image horizontalCenter="0" top="0" source="IconLeftBg_png"/>
+
+		<e:Label text="微信扫码登录" horizontalCenter="-21" top="305" size="30" fontFamily="Microsoft YaHei" italic="true" bold="true" textColor="0x333333"/>
+		<e:Group id="group_code1" width="225" height="225" horizontalCenter="-18" top="55">
+		</e:Group>
+		<ns1:CommonList id="iconList1" horizontalCenter="-15" top="357"/>
+	</e:Group>
+	<e:Group id="group_center" top="234" horizontalCenter="0">
+		<e:Image horizontalCenter="0" top="0" source="IconCenterBg_png"/>
+
+		<e:Label text="微信扫码登录" horizontalCenter="0" top="305" size="30" fontFamily="Microsoft YaHei" italic="true" bold="true" textColor="0x333333"/>
+		<e:Group id="group_code2" width="230" height="230" horizontalCenter="0" top="50"/>
+		<ns1:CommonList id="iconList2" top="357" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="group_right" top="234" right="193">
+		<e:Image horizontalCenter="0" top="0" source="IconRightBg_png"/>
+
+		<e:Label text="微信扫码登录" horizontalCenter="22" top="305" fontFamily="Microsoft YaHei" size="30" textColor="0x333333" bold="true"/>
+		<e:Group id="group_code3" width="235" height="235" horizontalCenter="20" top="47"/>
+		<ns1:CommonList id="iconList3" top="357" horizontalCenter="15"/>
+	</e:Group>
+	<e:Button id="btn_start" label="" horizontalCenter="0" top="782">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="startXLBtn_png" source.down="startXLBtn_png" source.disabled="startXLBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

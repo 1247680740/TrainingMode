@@ -1,0 +1,45 @@
+{
+  "engineVersion": "5.2.26",
+  "compilerVersion": "5.2.26",
+  "template": {},
+  "target": {
+    "current": "android"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "socket"
+    },
+    {
+      "name": "promise"
+    },
+    {
+      "name": "puremvc",
+      "path": "./libs/puremvc"
+    },
+    {
+      "name": "protobuf",
+      "path": "./libs/protobuf"
+    }
+  ],
+  "targets": {
+    "android": {
+      "appname": "Trainngmode",
+      "packagename": "com.mixfit.game.tranning"
+    }
+  }
+}

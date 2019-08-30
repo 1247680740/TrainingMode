@@ -1,0 +1,37 @@
+{
+  "skins": {
+    "CommonList": "resource/skin/common/CommonList.exml",
+    "ui.CommonIcon": "resource/skin/common/CommonIcon.exml",
+    "ui.CommonSetting": "resource/skin/common/CommonSetting.exml",
+    "ui.CommonSettingItem": "resource/skin/common/CommonSettingItem.exml",
+    "CommonGameIcon": "resource/skin/common/CommonGameIcon.exml",
+    "CommonFinish": "resource/skin/common/CommonFinish.exml",
+    "CommonCutDown": "resource/skin/common/CommonCutDown.exml",
+    "CommonGameForm": "resource/skin/common/CommonGameForm.exml",
+    "CommonGaemForm": "resource/skin/common/CommonGaemForm.exml",
+    "CommonResultItem": "resource/skin/common/CommonResultItem.exml"
+  },
+  "exmls": [
+    "resource/skin/common/CommonCutDown.exml",
+    "resource/skin/common/CommonFinish.exml",
+    "resource/skin/common/CommonGameForm.exml",
+    "resource/skin/common/CommonGameIcon.exml",
+    "resource/skin/common/CommonIcon.exml",
+    "resource/skin/common/CommonList.exml",
+    "resource/skin/common/CommonListItemSkin.exml",
+    "resource/skin/common/CommonResultItem.exml",
+    "resource/skin/common/CommonSettingItem.exml",
+    "resource/skin/common/CommonSetting.exml",
+    "resource/skin/skins/CountDownSkin.exml",
+    "resource/skin/skins/LoginSkin.exml",
+    "resource/skin/skins/ReadySkin.exml",
+    "resource/skin/skins/ResultSkin.exml",
+    "resource/skin/skins/SetUpSkin.exml",
+    "resource/skin/skins/ShopSkin.exml",
+    "resource/skin/skins/TaskTypeSkin.exml",
+    "resource/skin/skins/TimeTypeSkin.exml",
+    "resource/skin/skins/MainUISkin.exml",
+    "resource/skin/skins/HomeCitySkin.exml",
+    "resource/skin/skins/TeachSkin.exml"
+  ]
+}

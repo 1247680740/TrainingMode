@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" class="CountDownSkin">
+	<e:Button id="btn_pause" label="" left="15" top="23">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="pauseBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group right="32" bottom="131">
+		<e:Image source="DemonstrationBg_png" horizontalCenter="0" verticalCenter="0"/>
+		<e:Label id="label_tip" text="" fontFamily="Microsoft YaHei" size="30" horizontalCenter="0" verticalCenter="-42.5" italic="true" bold="true"/>
+		<e:Label id="label_time" text="" size="96" horizontalCenter="-15" verticalCenter="37" italic="true" fontFamily="Microsoft YaHei" bold="true" width="300" textAlign="center"/>
+	</e:Group>
+	<e:Button id="btn_skip" label="" right="32" bottom="38">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="skipBtn_png" source.down="skipBtn_png" source.disabled="skipBtn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<ns1:CommonList id="list_L" horizontalCenter="-592.5" top="15"/>
+	<ns1:CommonList id="list_C" horizontalCenter="0" top="15"/>
+	<ns1:CommonList id="list_R" horizontalCenter="592.5" top="15"/>
+
+
+
+</e:Skin>
