@@ -46,8 +46,8 @@ class CommonBulls extends eui.Component implements eui.UIComponent {
 	private touch(): void {
 		this.img_touch.touchEnabled = false;
 		egret.Tween.removeTweens(this);
-		egret.Tween.get(this).to({ scaleX: 0, scaleY: 0, alpha: 0 }, 300, egret.Ease.sineIn).call(() => {
-			egret.Tween.get(this).to({ scaleX: 1, scaleY: 1, alpha: 1 }, 300, egret.Ease.backInOut).call(() => {
+		egret.Tween.get(this).to({ scaleX: 0, scaleY: 0, alpha: 0 }, 200, egret.Ease.sineIn).call(() => {
+			egret.Tween.get(this).to({ scaleX: 1, scaleY: 1, alpha: 1 }, 200, egret.Ease.backInOut).call(() => {
 				this.img_touch.touchEnabled = true;
 				if (!GlobalData.checkType) {
 					game.AppFacade.getInstance().sendNotification(EventConfig.Event_UPDATE_TOUCH_Task, this.getName());

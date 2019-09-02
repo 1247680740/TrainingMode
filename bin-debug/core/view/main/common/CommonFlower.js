@@ -38,10 +38,12 @@ var CommonFlower = (function (_super) {
             this.parent.removeChild(this);
         }
         this.removeEventListener(eui.UIEvent.COMPLETE, this.createCompleteEvent, this);
+        this.removeEventListener(egret.TimerEvent.ENTER_FRAME, this.rotationing, this);
         this.img_touch.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.touCh, this);
         this.removeEventListener(egret.Event.REMOVED_FROM_STAGE, this.remove, this);
     };
     CommonFlower.prototype.createCompleteEvent = function () {
+        this.addEventListener(egret.TimerEvent.ENTER_FRAME, this.rotationing, this);
         this.img_touch.addEventListener(egret.TouchEvent.TOUCH_TAP, this.touCh, this);
         this.flower.addEventListener('complete', this.onTweenGroupComplete, this);
     };
@@ -50,6 +52,9 @@ var CommonFlower = (function (_super) {
         if (!GlobalData.checkType) {
             game.AppFacade.getInstance().sendNotification(EventConfig.Event_UPDATE_TOUCH_Task, this.getName());
         }
+    };
+    CommonFlower.prototype.rotationing = function () {
+        this.rotation += 3;
     };
     CommonFlower.prototype.touCh = function () {
         this.img_touch.touchEnabled = false;

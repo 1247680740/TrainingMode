@@ -48,7 +48,6 @@ var CommonList = (function (_super) {
         }
     };
     CommonList.prototype.selectIndex = function (e) {
-        console.log(this.list_icon.selectedItem, this.list_icon.selectedIndex);
         if (this.listIndex == 1) {
             P.getGameDataProxy().deleteLeftPlayer(this.list_icon.selectedItem);
         }

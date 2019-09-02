@@ -51,12 +51,12 @@ class CommonLinear extends eui.Component implements eui.UIComponent {
 	private initShow(): void {
 		egret.Tween.removeTweens(this);
 		let angle: number = Math.floor(Math.random() * 360);
-		egret.Tween.get(this).to({ rotation: angle }, 3000, egret.Ease.sineInOut).call(() => {
+		egret.Tween.get(this).to({ rotation: angle }, 300, egret.Ease.sineInOut).call(() => {
 			egret.Tween.removeTweens(this);
 		}, this);
-		egret.Tween.get(this).to({ scaleX: 0.5, scaleY: 0.5 }, 1000, egret.Ease.sineInOut).call(() => {
-			egret.Tween.get(this).to({ scaleX: 1.5, scaleY: 1.5 }, 1000, egret.Ease.sineInOut).call(() => {
-				egret.Tween.get(this).to({ scaleX: 1, scaleY: 1 }, 1000, egret.Ease.sineInOut).call(() => {
+		egret.Tween.get(this).to({ scaleX: 0.5, scaleY: 0.5 }, 100, egret.Ease.sineInOut).call(() => {
+			egret.Tween.get(this).to({ scaleX: 1.5, scaleY: 1.5 }, 100, egret.Ease.sineInOut).call(() => {
+				egret.Tween.get(this).to({ scaleX: 1, scaleY: 1 }, 100, egret.Ease.sineInOut).call(() => {
 					egret.Tween.removeTweens(this);
 					if (!GlobalData.checkType) {
 						game.AppFacade.getInstance().sendNotification(EventConfig.Event_UPDATE_TOUCH_Task, this.getName());

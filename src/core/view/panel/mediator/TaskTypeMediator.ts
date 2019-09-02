@@ -100,11 +100,11 @@ module game {
             this.taskTypePanel.btn_result.addEventListener(egret.TouchEvent.TOUCH_TAP, this.checkResult, this);
             for (let i: number = 1; i < 4; i++) {
                 if (i == 1) {
-                    this.taskTypePanel.l_progress.setGame(14, i);
+                    this.taskTypePanel.l_progress.setGame(11, i);
                 } else if (i == 2) {
-                    this.taskTypePanel.c_progress.setGame(14, i);
+                    this.taskTypePanel.c_progress.setGame(11, i);
                 } else if (i == 3) {
-                    this.taskTypePanel.r_progress.setGame(14, i);
+                    this.taskTypePanel.r_progress.setGame(11, i);
                 }
             }
             this.taskTypePanel.l_prepara.setName("prepara1");
@@ -210,7 +210,6 @@ module game {
                         if (data.touchNum == GlobalData.taskOneData && arr[0] == arr[1]) {
                             let commonMap: CommonTileMap = this.taskTypePanel.r_progress.getChildAt(0) as CommonTileMap;
                             if (commonMap) {
-                                console.log("设置显示");
                                 commonMap.setFinishShow(true);
                             }
                         }

@@ -94,7 +94,6 @@ class CommonTable extends eui.Component implements eui.UIComponent {
 		}
 		if (this.curArr.length <= 0) {
 			this.curArr.splice(0, this.curArr.length);
-			console.log("开始传递点击事件");
 			this.initShowObj();
 			// 传递点击事件回主页
 			if (GlobalData.checkType) {

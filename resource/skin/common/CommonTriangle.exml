@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="CommonTriangleSkin" width="321" height="278" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+<e:Skin class="CommonTriangleSkin" width="320" height="278" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="triangle">
 			<tween:TweenItem target="{img_touch}">
@@ -8,7 +8,7 @@
 						<e:Object scaleX="{1}" alpha="{1}" scaleY="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="400" ease="quintIn">
+				<tween:To duration="200" ease="quintIn">
 					<tween:props>
 						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}"/>
 					</tween:props>
@@ -22,5 +22,5 @@
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="16cb8715ac5" ></w:Config>
-	<e:Image id="img_touch" source="commonTriangle_png" width="321" height="278" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="img_touch" width="320" height="278" horizontalCenter="0" source="commonTriangle_png" verticalCenter="0"/>
 </e:Skin>

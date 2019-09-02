@@ -45,16 +45,19 @@ var game;
          * 初始化面板ui
          */
         TeachMediator.prototype.initUI = function () {
-            var _this = this;
-            this.teachPanel.btn_back.addEventListener(egret.TouchEvent.TOUCH_TAP, function () {
-                _this.closePanel(1);
-                game.AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_HOME);
-            }, this);
+            this.teachPanel.btn_back.addEventListener(egret.TouchEvent.TOUCH_TAP, this.clickButtonCLose, this);
         };
         /**
          * 初始化面板数据
          */
         TeachMediator.prototype.initData = function () {
+        };
+        TeachMediator.prototype.clickButtonCLose = function () {
+            this.teachPanel.btn_back.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.clickButtonCLose, this);
+            this.closePanel(1);
+            game.AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_HOME);
+        };
+        TeachMediator.prototype.createVideo = function () {
         };
         TeachMediator.NAME = "TeachMediator";
         return TeachMediator;

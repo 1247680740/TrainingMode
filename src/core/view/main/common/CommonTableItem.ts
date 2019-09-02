@@ -23,6 +23,7 @@ class CommonTableItem extends eui.Component implements eui.UIComponent {
 		if (this.parent) {
 			this.parent.removeChild(this);
 		}
+		egret.Tween.removeTweens(this.img_top);
 		this.removeEventListener(eui.UIEvent.COMPLETE, this.loadComplete, this);
 		this.removeEventListener(egret.Event.REMOVED_FROM_STAGE, this.remove, this);
 	}
@@ -45,7 +46,7 @@ class CommonTableItem extends eui.Component implements eui.UIComponent {
 		this.img_top.alpha = 0;
 		this.img_top.scaleX = 0;
 		this.img_top.scaleY = 0;
-		egret.Tween.get(this.img_top).to({scaleX:1,scaleY:1,alpha:1},500).call(()=>{
+		egret.Tween.get(this.img_top).to({scaleX:1,scaleY:1,alpha:1},250).call(()=>{
 			egret.Tween.removeTweens(this.img_top);
 		},this);;
 	}
@@ -57,7 +58,7 @@ class CommonTableItem extends eui.Component implements eui.UIComponent {
 	public setScale():void{
 		egret.Tween.removeTweens(this.img_top);
 		this.img_top.visible = true;
-		egret.Tween.get(this.img_top).to({scaleX:0,scaleY:0,alpha:0},500,egret.Ease.sineIn).call(()=>{
+		egret.Tween.get(this.img_top).to({scaleX:0,scaleY:0,alpha:0},250,egret.Ease.sineIn).call(()=>{
 			this.img_top.visible = false;
 			egret.Tween.removeTweens(this.img_top);
 		},this);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<e:Skin class="CommonTileMapSkin" width="592" height="662" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
+<e:Skin class="CommonTileMapSkin" width="592" height="710" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*" >
 	<w:Declarations>
 		<tween:TweenGroup id="circle">
 			<tween:TweenItem target="{img_circle}">
@@ -8,26 +8,26 @@
 						<e:Object scaleX="{1}" scaleY="{1}" alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="300" ease="sineIn">
+				<tween:To duration="150" ease="sineIn">
 					<tween:props>
 						<e:Object scaleX="{1.5}" scaleY="{1.5}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
-				<tween:To duration="200" ease="sineIn">
+				<tween:To duration="150" ease="sineIn">
 					<tween:props>
 						<e:Object scaleX="{0.5}" scaleY="{0.5}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
-				<tween:To duration="200" ease="backInOut">
+				<tween:To duration="200" ease="backOut">
 					<tween:props>
-						<e:Object scaleX="{1}" scaleY="{1}" alpha="{1}"/>
+						<e:Object scaleY="{1}" scaleX="{1}" alpha="{1}"/>
 					</tween:props>
 				</tween:To>
 			</tween:TweenItem>
 		</tween:TweenGroup>
 	</w:Declarations>
 	<w:Config id="16ccb88aac7" ></w:Config>
-	<e:Image id="img_circle" source="circle_png" horizontalCenter="0" verticalCenter="-91.5"/>
-	<e:Image id="img_finish" horizontalCenter="0" source="finishRoad_png" verticalCenter="-91" visible="false"/>
+	<e:Image id="img_circle" source="circle_png" horizontalCenter="0" verticalCenter="-115.5"/>
+	<e:Image id="img_finish" horizontalCenter="0" source="finishRoad_png" verticalCenter="-76" visible="false"/>
 	<e:Image bottom="0" horizontalCenter="0" source="runway_png"/>
 </e:Skin>

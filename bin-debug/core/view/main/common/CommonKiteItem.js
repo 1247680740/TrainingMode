@@ -40,7 +40,7 @@ var CommonKiteItem = (function (_super) {
         this.removeEventListener(egret.Event.ENTER_FRAME, this.setRotation, this);
     };
     CommonKiteItem.prototype.setRotation = function () {
-        this.rotation += 3;
+        this.rotation += 20;
     };
     CommonKiteItem.prototype.setHide = function () {
         this.img_red.visible = false;

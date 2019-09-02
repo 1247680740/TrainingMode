@@ -55,12 +55,12 @@ var CommonLinear = (function (_super) {
         var _this = this;
         egret.Tween.removeTweens(this);
         var angle = Math.floor(Math.random() * 360);
-        egret.Tween.get(this).to({ rotation: angle }, 3000, egret.Ease.sineInOut).call(function () {
+        egret.Tween.get(this).to({ rotation: angle }, 300, egret.Ease.sineInOut).call(function () {
             egret.Tween.removeTweens(_this);
         }, this);
-        egret.Tween.get(this).to({ scaleX: 0.5, scaleY: 0.5 }, 1000, egret.Ease.sineInOut).call(function () {
-            egret.Tween.get(_this).to({ scaleX: 1.5, scaleY: 1.5 }, 1000, egret.Ease.sineInOut).call(function () {
-                egret.Tween.get(_this).to({ scaleX: 1, scaleY: 1 }, 1000, egret.Ease.sineInOut).call(function () {
+        egret.Tween.get(this).to({ scaleX: 0.5, scaleY: 0.5 }, 100, egret.Ease.sineInOut).call(function () {
+            egret.Tween.get(_this).to({ scaleX: 1.5, scaleY: 1.5 }, 100, egret.Ease.sineInOut).call(function () {
+                egret.Tween.get(_this).to({ scaleX: 1, scaleY: 1 }, 100, egret.Ease.sineInOut).call(function () {
                     egret.Tween.removeTweens(_this);
                     if (!GlobalData.checkType) {
                         game.AppFacade.getInstance().sendNotification(EventConfig.Event_UPDATE_TOUCH_Task, _this.getName());

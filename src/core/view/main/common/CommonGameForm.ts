@@ -70,7 +70,7 @@ class CommonGameForm extends eui.Component implements eui.UIComponent {
 				commonHeart.visible = true;
 				commonHeart.setName("ball" + index);
 				this.addChildAt(commonHeart, 0);
-				this.setIconPos(471);
+				this.setIconPos(490);
 				break;
 			case 4: //方形表格
 				let commonTable: CommonTable = DisplayObjectPool.getInstance().pop(CommonTable);

@@ -362,14 +362,12 @@ module game {
                         GlobalData._curTaskLeftGroup = 1;
                         GlobalData.l_curTaskTotalGroup = 1;
                         GlobalData.l_curTaskEveryGroup = 0;
-                        console.log("进入完成界面");
                         this.setStateChange("L", 3);
                         this.fillLeftData();
                     } else { //进入下一组第一人
                         GlobalData._curTaskLeftGroup += 1;
                         GlobalData.l_curTaskTotalGroup += 1;
                         GlobalData.l_curTaskEveryGroup = 0;
-                        console.log("进入准备界面");
                         this.leftTimer = new egret.Timer(1000);
                         this.setTaskData();
                         this.judgeState("L");
@@ -378,7 +376,6 @@ module game {
                 } else {
                     GlobalData.l_curTaskEveryGroup += 1;
                     GlobalData.l_curTaskTotalGroup += 1;
-                    console.log("进入准备界面");
                     this.leftTimer = new egret.Timer(1000);
                     this.setTaskData();
                     this.judgeState("L");
@@ -403,14 +400,12 @@ module game {
                         GlobalData._curTaskCenterGroup = 1;
                         GlobalData.c_curTaskTotalGroup = 1;
                         GlobalData.c_curTaskEveryGroup = 0;
-                        console.log("进入完成界面");
                         this.setStateChange("C", 3);
                         this.fillCenterData();
                     } else { //进入下一组第一人
                         GlobalData._curTaskCenterGroup += 1;
                         GlobalData.c_curTaskTotalGroup += 1;
                         GlobalData.c_curTaskEveryGroup = 0;
-                        console.log("进入准备界面");
                         this.centerTimer = new egret.Timer(1000);
                         this.setTaskData();
                         this.judgeState("C");
@@ -419,7 +414,6 @@ module game {
                 } else {
                     GlobalData.c_curTaskEveryGroup += 1;
                     GlobalData.c_curTaskTotalGroup += 1;
-                    console.log("进入准备界面");
                     this.centerTimer = new egret.Timer(1000);
                     this.setTaskData();
                     this.judgeState("C");
@@ -443,7 +437,6 @@ module game {
                         GlobalData._curTaskRightGroup = 1;
                         GlobalData.r_curTaskTotalGroup = 1;
                         GlobalData.r_curTaskEveryGroup = 0;
-                        console.log("进入完成界面");
                         this.setStateChange("R", 3);
                         this.fillRightData();
                     } else { //进入下一组第一人

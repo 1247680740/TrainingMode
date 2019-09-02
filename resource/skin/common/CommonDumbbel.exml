@@ -8,12 +8,12 @@
 						<e:Object scaleX="{1}" scaleY="{1}" alpha="{1}"/>
 					</tween:props>
 				</tween:Set>
-				<tween:To duration="450" ease="sineIn">
+				<tween:To duration="250" ease="sineIn">
 					<tween:props>
 						<e:Object scaleX="{0}" scaleY="{0}" alpha="{0}"/>
 					</tween:props>
 				</tween:To>
-				<tween:To duration="300" ease="backOut">
+				<tween:To duration="200" ease="backOut">
 					<tween:props>
 						<e:Object scaleX="{1}" scaleY="{1}" alpha="{1}"/>
 					</tween:props>

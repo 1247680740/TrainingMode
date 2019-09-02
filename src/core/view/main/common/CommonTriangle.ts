@@ -4,6 +4,7 @@ class CommonTriangle extends eui.Component implements eui.UIComponent {
 	public img_touch: eui.Image;
 	private nameStr: string = "";
 	public triangle: egret.tween.TweenGroup;
+	private angleArr:Array<number> = [0,120,240];
 
 	public constructor() {
 		super();
@@ -33,6 +34,7 @@ class CommonTriangle extends eui.Component implements eui.UIComponent {
 		if (this.parent) {
 			this.parent.removeChild(this);
 		}
+		// egret.Tween.removeTweens(this.img_touch);
 		this.triangle.removeEventListener('complete', this.onTweenGroupComplete, this);
 		this.img_touch.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.touch, this)
 		this.removeEventListener(eui.UIEvent.COMPLETE, this.loadComplete, this);
@@ -53,6 +55,11 @@ class CommonTriangle extends eui.Component implements eui.UIComponent {
 
 	private touch(): void {
 		this.img_touch.touchEnabled = false;
+		// egret.Tween.removeTweens(this.img_touch);
+		// let angle: number = this.angleArr[Math.floor(Math.random()*this.angleArr.length)];
+		// egret.Tween.get(this.img_touch).to({rotation:angle},500).call(()=>{
+		// 	egret.Tween.removeTweens(this.img_touch);
+		// },this);
 		this.triangle.play(0);
 		if (GlobalData.checkType) {
 			game.AppFacade.getInstance().sendNotification(EventConfig.Event_UPDATE_TOUCH_Time, this.getName());

@@ -41,7 +41,7 @@ class CommonKiteItem extends eui.Component implements eui.UIComponent {
 	}
 
 	private setRotation(): void {
-		this.rotation += 3;
+		this.rotation += 20;
 	}
 
 	public setHide(): void {

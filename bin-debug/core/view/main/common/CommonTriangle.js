@@ -14,6 +14,7 @@ var CommonTriangle = (function (_super) {
     function CommonTriangle() {
         var _this = _super.call(this) || this;
         _this.nameStr = "";
+        _this.angleArr = [0, 120, 240];
         _this.horizontalCenter = 0;
         _this.verticalCenter = 27;
         GlobalData.gamePos = _this.bottom;
@@ -37,6 +38,7 @@ var CommonTriangle = (function (_super) {
         if (this.parent) {
             this.parent.removeChild(this);
         }
+        // egret.Tween.removeTweens(this.img_touch);
         this.triangle.removeEventListener('complete', this.onTweenGroupComplete, this);
         this.img_touch.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.touch, this);
         this.removeEventListener(eui.UIEvent.COMPLETE, this.loadComplete, this);
@@ -54,6 +56,11 @@ var CommonTriangle = (function (_super) {
     };
     CommonTriangle.prototype.touch = function () {
         this.img_touch.touchEnabled = false;
+        // egret.Tween.removeTweens(this.img_touch);
+        // let angle: number = this.angleArr[Math.floor(Math.random()*this.angleArr.length)];
+        // egret.Tween.get(this.img_touch).to({rotation:angle},500).call(()=>{
+        // 	egret.Tween.removeTweens(this.img_touch);
+        // },this);
         this.triangle.play(0);
         if (GlobalData.checkType) {
             game.AppFacade.getInstance().sendNotification(EventConfig.Event_UPDATE_TOUCH_Time, this.getName());

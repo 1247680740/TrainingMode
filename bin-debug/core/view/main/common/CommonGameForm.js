@@ -65,7 +65,7 @@ var CommonGameForm = (function (_super) {
                 commonHeart.visible = true;
                 commonHeart.setName("ball" + index);
                 this.addChildAt(commonHeart, 0);
-                this.setIconPos(471);
+                this.setIconPos(490);
                 break;
             case 4://方形表格
                 var commonTable = DisplayObjectPool.getInstance().pop(CommonTable);

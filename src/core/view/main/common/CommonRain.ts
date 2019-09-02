@@ -28,7 +28,7 @@ class CommonRain extends eui.Component implements eui.UIComponent {
 
 	private loadComplete(): void {
 		if (!this.dropTimer) {
-			this.dropTimer = new egret.Timer(2000);
+			this.dropTimer = new egret.Timer(1500);
 		}
 		this.dropTimer.addEventListener(egret.TimerEvent.TIMER, () => {
 			this.rain_left = this.createRain();
@@ -90,7 +90,7 @@ class CommonRain extends eui.Component implements eui.UIComponent {
 		let curTarget: eui.Image = event.currentTarget;
 		if (this.hitTest(this.img_rain1, curTarget) || this.hitTest(this.img_rain2, curTarget)) {
 			egret.Tween.removeTweens(curTarget);
-			egret.Tween.get(curTarget).to({ scaleX: 0, scaleY: 0, alpha: 0 }, 250, egret.Ease.backInOut).call(() => {
+			egret.Tween.get(curTarget).to({ scaleX: 2, scaleY: 2, alpha: 0 }, 500, egret.Ease.sineIn).call(() => {
 				egret.Tween.removeTweens(curTarget);
 				if (curTarget.parent) {
 					curTarget.parent.removeChild(curTarget);

@@ -30,7 +30,7 @@ var CommonRain = (function (_super) {
     CommonRain.prototype.loadComplete = function () {
         var _this = this;
         if (!this.dropTimer) {
-            this.dropTimer = new egret.Timer(2000);
+            this.dropTimer = new egret.Timer(1500);
         }
         this.dropTimer.addEventListener(egret.TimerEvent.TIMER, function () {
             _this.rain_left = _this.createRain();
@@ -88,7 +88,7 @@ var CommonRain = (function (_super) {
         var curTarget = event.currentTarget;
         if (this.hitTest(this.img_rain1, curTarget) || this.hitTest(this.img_rain2, curTarget)) {
             egret.Tween.removeTweens(curTarget);
-            egret.Tween.get(curTarget).to({ scaleX: 0, scaleY: 0, alpha: 0 }, 250, egret.Ease.backInOut).call(function () {
+            egret.Tween.get(curTarget).to({ scaleX: 2, scaleY: 2, alpha: 0 }, 500, egret.Ease.sineIn).call(function () {
                 egret.Tween.removeTweens(curTarget);
                 if (curTarget.parent) {
                     curTarget.parent.removeChild(curTarget);

@@ -27,6 +27,7 @@ var CommonTableItem = (function (_super) {
         if (this.parent) {
             this.parent.removeChild(this);
         }
+        egret.Tween.removeTweens(this.img_top);
         this.removeEventListener(eui.UIEvent.COMPLETE, this.loadComplete, this);
         this.removeEventListener(egret.Event.REMOVED_FROM_STAGE, this.remove, this);
     };
@@ -46,7 +47,7 @@ var CommonTableItem = (function (_super) {
         this.img_top.alpha = 0;
         this.img_top.scaleX = 0;
         this.img_top.scaleY = 0;
-        egret.Tween.get(this.img_top).to({ scaleX: 1, scaleY: 1, alpha: 1 }, 500).call(function () {
+        egret.Tween.get(this.img_top).to({ scaleX: 1, scaleY: 1, alpha: 1 }, 250).call(function () {
             egret.Tween.removeTweens(_this.img_top);
         }, this);
         ;
@@ -58,7 +59,7 @@ var CommonTableItem = (function (_super) {
         var _this = this;
         egret.Tween.removeTweens(this.img_top);
         this.img_top.visible = true;
-        egret.Tween.get(this.img_top).to({ scaleX: 0, scaleY: 0, alpha: 0 }, 500, egret.Ease.sineIn).call(function () {
+        egret.Tween.get(this.img_top).to({ scaleX: 0, scaleY: 0, alpha: 0 }, 250, egret.Ease.sineIn).call(function () {
             _this.img_top.visible = false;
             egret.Tween.removeTweens(_this.img_top);
         }, this);

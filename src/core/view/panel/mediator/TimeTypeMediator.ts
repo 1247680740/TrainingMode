@@ -109,7 +109,6 @@ module game {
                             GlobalData._curTimerGroup = 1;
                             GlobalData._curTimerTotalGroup = 1;
                             GlobalData._curTimerEveryGroup = 0;
-                            console.log("进入结算界面");
                             this.closeButtonClick();
                             // game.AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_RESULT);
                             game.AppFacade.getInstance().sendNotification(NoficationConfig.OPEN_TIME_FINISH);
